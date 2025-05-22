@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #4CAF50;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #4CAF50, #66bb6a);
+    color: white;
+}
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+h2 {
+    color: #333;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* 額外美化 */
+section {
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url('image/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #45a049;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    nav a {
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+    .hero {
+        padding: 40px 10px;
+        height: auto;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 15px;
+    }
+    .hero-image {
+        width: 120px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .hero h1 {
+        font-size: 22px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    section {
+        padding: 25px 10px;
+    }
+}
