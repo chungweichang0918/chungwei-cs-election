@@ -48,6 +48,19 @@ h2 {
     bottom: 0;
     width: 100%;
 }
+nav {
+  transition: all 0.3s ease;
+}
+
+.nav-shrink {
+  padding: 6px 10px;
+  background-color: #222; /* 顏色略變暗更有動態感 */
+}
+
+.nav-shrink a {
+  padding: 8px 10px;
+  font-size: 14px;
+}
 
 
 /* 額外美化 */
